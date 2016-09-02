@@ -11,7 +11,9 @@ before_install:
   - sudo pip install codecov
   - ./install_oclint.sh
 
-install: sudo apt-get install -qq g++-5
+install: 
+  - sudo apt-get install -qq g++-5
+  - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 90
 
 script: 
   - ./build_normal_debug.sh
