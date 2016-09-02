@@ -16,6 +16,8 @@ script:
   - ./build_normal_debug.sh
   - ./build_normal_release.sh
   - ./build_test.sh
-
-after_success: 
+  - ./get_code_cov.sh
   - codecov
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
