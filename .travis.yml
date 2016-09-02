@@ -16,11 +16,11 @@ install:
   - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-5 90
 
 script: 
-  - ./build_normal_debug.sh
-  - ./build_normal_release.sh
   - ./build_test.sh
+  - ./travis_qmake_gcc_cpp11_boost_test_gcov_oclint_test
   - ./get_code_cov.sh
   - codecov
+  - ./build.sh
   - ./do_oclint.sh
 
 after_success:
