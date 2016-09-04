@@ -16,3 +16,12 @@ BOOST_AUTO_TEST_CASE(test_calc_mean)
   const double expected{2.0};
   BOOST_CHECK_EQUAL(measured, expected);
 }
+
+BOOST_AUTO_TEST_CASE(test_calc_mean_needs_nonempty_vector)
+{
+  std::vector<double> empty;
+  BOOST_CHECK_THROW(
+    calc_mean(empty), 
+    std::invalid_argument
+  );
+}

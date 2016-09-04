@@ -5,7 +5,7 @@
 
 bool is_odd(const int i) noexcept
 {
-  return i % 2 == 1;
+  return i % 2 != 0;
 }
 
 double calc_mean(const std::vector<double>& v)
