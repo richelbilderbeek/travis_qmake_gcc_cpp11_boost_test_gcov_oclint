@@ -38,3 +38,5 @@ Makefile
 Makefile.*
 travis_qmake_gcc_cpp11_boost_test_gcov_oclint
 travis_qmake_gcc_cpp11_boost_test_gcov_oclint_test
+*.tar.gz
+oclint-0.10.3/
