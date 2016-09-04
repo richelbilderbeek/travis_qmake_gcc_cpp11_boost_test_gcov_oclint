@@ -7,6 +7,11 @@
 [![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint)
 [![codecov.io](https://codecov.io/github/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint?branch=master)
 
+Demo branch, that should fail:
+[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint.svg?branch=demo)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint)
+[![codecov.io](https://codecov.io/github/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint/coverage.svg?branch=demo)](https://codecov.io/github/richelbilderbeek/travis_qmake_gcc_cpp11_boost_test_gcov_oclint?branch=demo)
+
+
 This GitHub is part of [the Travis C++ Tutorial](https://github.com/richelbilderbeek/travis_cpp_tutorial).
 
 The goal of this project is to have a clean Travis CI build, with specs:

@@ -1,10 +1,18 @@
 #include <boost/test/unit_test.hpp>
+
 #include "my_functions.h"
 
-BOOST_AUTO_TEST_CASE(add_works)
+BOOST_AUTO_TEST_CASE(test_is_odd)
 {
-  BOOST_CHECK(add(1, 1) == 2);
-  BOOST_CHECK(add(1, 2) == 3);
-  BOOST_CHECK(add(1, 3) == 4);
-  BOOST_CHECK(add(1, 4) == 5);
+  BOOST_CHECK(!is_odd(0));
+  BOOST_CHECK( is_odd(1));
+}
+
+BOOST_AUTO_TEST_CASE(test_calc_mean)
+{
+  const double measured{
+    calc_mean( {1.0, 2.0, 3.0} )
+  };
+  const double expected{2.0};
+  BOOST_CHECK_EQUAL(measured, expected);
 }
